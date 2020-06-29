@@ -3,5 +3,11 @@ var app = new Vue({
   data: {
     message: "Hello from JavaScript!",
     name: "Dani"
+  },
+  methods: {
+    changeMessage: function () {
+      this.message = "Whoa....";
+    }
   }
 });
+

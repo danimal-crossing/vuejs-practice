@@ -17,7 +17,7 @@
       <p v-if="showExtraInformation">Extra Information</p>
     </div>
     <div v-for="fruit in fruits">
-      <p>{{ fruit }}</p>
+      <p>{{ fruit }} <button v-on:click="deleteFruit(fruit)">Delete</button></p>
     </div>
     <input type="text" v-model="newFruit">
     <button v-on:click="addNewFruit()">Add Fruit</button>

@@ -14,6 +14,12 @@ var app = new Vue({
     addNewFruit: function () {
       this.fruits.push(this.newFruit);
       this.newFruit = "";
+    },
+    deleteFruit: function (fruit) {
+      // find index of the string 'apple'
+      var index = this.fruits.indexOf(fruit)
+      // splice out that index
+      this.fruits.splice(index, 1);
     }
   }
 });

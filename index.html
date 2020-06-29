@@ -16,6 +16,11 @@
       <button v-on:click="showExtraInformation = !showExtraInformation">Toggle</button>
       <p v-if="showExtraInformation">Extra Information</p>
     </div>
+    <div v-for="fruit in fruits">
+      <p>{{ fruit }}</p>
+    </div>
+    <input type="text" v-model="newFruit">
+    <button v-on:click="addNewFruit()">Add Fruit</button>
   </div>
 </body>
 </html>
